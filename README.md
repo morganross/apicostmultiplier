@@ -14,4 +14,4 @@ On install, this software will download other software codebases from github int
 The gui allows for configuring bredth, depth, quality, and quantity, with cost estimation.
 
 
-apicostmultiplier can further be combined with *diseminate and WebformFoundry to automaticly communicate documents. To allow for sending a high number of high quality documents to a high number of endpoints while minimizing cost, all from a single list.
+apicostmultiplier can further be combined with *newsintake, saruos2diseminate, and WebformFoundry to automaticly communicate topical documents. Which allows for sending a high number of high quality documents to a high number of endpoints while minimizing cost, all from a single list.
