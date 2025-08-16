@@ -17,4 +17,4 @@ The gui allows for configuring bredth, depth, quality, and quantity, with cost e
 apicostmultiplier can further be combined with *newsintake, saruos2diseminate, and WebformFoundry to automaticly communicate topical documents. Which allows for sending a high number of high quality documents to a high number of endpoints while minimizing cost, all from a single list.
 
 
-### process_markdown runs a list of promopts through GPT-R (a local multi agent deep researcher) and trough deep reseach model one shots. It repeats this process x number of times per model and for x number of models. LLM_doc_eval then compares each repsonse aginst everyother response x number of times to get ELO score.###
+### process_markdown ### runs a list of promopts through GPT-R (a local multi agent deep researcher) and trough deep reseach model one shots. It repeats this process x number of times per model and for x number of models. LLM_doc_eval then compares each repsonse aginst everyother response x number of times to get ELO score.
