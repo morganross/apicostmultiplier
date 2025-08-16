@@ -12,3 +12,6 @@ apicostmultiplier can produce a massive number of documents from a single list, 
 On install, this software will download other software codebases from github into folders. apicostmultiplier is a process flow orchestrator for using the downloaded software. It can be used to interact with one or more of the downloaded softwares, and can use the output from one as the input for another.  can be used from the command line, in a python script, or from the apicostmultiplier GUI.
 
 The gui allows for configuring bredth, depth, quality, and quantity, with cost estimation.
+
+
+apicostmultiplier can further be combined with *diseminate and WebformFoundry to automaticly communicate documents. To allow for sending a high number of high quality documents to a high number of endpoints while minimizing cost, all from a single list.
