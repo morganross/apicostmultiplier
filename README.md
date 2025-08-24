@@ -1,6 +1,6 @@
 # apicostmultiplier
 
-ACM is a GUI and a installer for 'process_markdown'. Process_markdown uses GPT-R and llm_doc_eval, whcih ACM also installs.
+ACM is a GUI and a installer for 'process_markdown'. Process_markdown uses GPT-R and llm_doc_eval, whcih ACM also installs. The GUI is helpful for editing config files from seperate repos in one place.
 
 
 
