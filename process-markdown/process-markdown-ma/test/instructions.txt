@@ -1,0 +1,5 @@
+Please generate a concise research report based on the provided markdown content. Follow these rules:
+- Produce a clear, structured markdown report with headings.
+- Include relevant sources if known. If no external sources are available, write a self-contained answer.
+- Keep the tone objective and professional.
+- Aim for ~300-800 words depending on content.

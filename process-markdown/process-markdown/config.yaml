@@ -1,0 +1,4 @@
+input_folder: ./test/mdinputs
+output_folder: ./test/mdoutputs
+instructions_file: ./test/instructions.txt
+one_file_only: true
