@@ -1,4 +1,9 @@
 # apicostmultiplier
+
+ACM is a GUI and a installer for 'process_markdown'. Process_markdown uses GPT-R and llm_doc_eval, whcih ACM also installs.
+
+
+
 apicostmultiplier programmatically combines Doc2saurus, FilePromptForge, GPT-Researcher, and LLM_doc_eval, and a GUI to produce written reports from a list. 
 
 apicostmultiplier aims to improve output from any LLM by subdiving tasks to overcome context window limitations, and by including iteration, evaluation and revison.
