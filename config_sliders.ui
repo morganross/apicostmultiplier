@@ -1,0 +1,3483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1224</width>
+    <height>967</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>967</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Config Sliders</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="rowLayout">
+      <item alignment="Qt::AlignTop">
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>800</height>
+         </size>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>312</width>
+           <height>798</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="mainLayout">
+          <item alignment="Qt::AlignTop">
+           <widget class="QGroupBox" name="groupGeneral">
+            <property name="title">
+             <string>Presets</string>
+            </property>
+            <layout class="QFormLayout" name="formGeneral">
+             <item row="0" column="0">
+              <widget class="QLabel" name="labelIterations">
+               <property name="text">
+                <string>Maser Quality</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <layout class="QHBoxLayout" name="hLayoutIterations">
+               <item>
+                <widget class="QLabel" name="labelIterationsMin">
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderIterations">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>9</number>
+                 </property>
+                 <property name="value">
+                  <number>1</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelIterationsMax">
+                 <property name="text">
+                  <string>9</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupGeneral_2">
+            <property name="title">
+             <string>General</string>
+            </property>
+            <layout class="QFormLayout" name="formGeneral_2">
+             <item row="0" column="0">
+              <widget class="QLabel" name="labelIterations_2">
+               <property name="text">
+                <string>Iterations</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <layout class="QHBoxLayout" name="hLayoutIterations_2">
+               <item>
+                <widget class="QLabel" name="labelIterationsMin_2">
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderIterations_2">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>9</number>
+                 </property>
+                 <property name="value">
+                  <number>1</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelIterationsMax_2">
+                 <property name="text">
+                  <string>9</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupFPF">
+            <property name="title">
+             <string>FPF (FilePromptForge)</string>
+            </property>
+            <layout class="QFormLayout" name="formFPF">
+             <item row="0" column="0">
+              <widget class="QLabel" name="labelGroundingMaxResults">
+               <property name="text">
+                <string>grounding.max_results</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <layout class="QHBoxLayout" name="hLayoutGroundingMaxResults">
+               <item>
+                <widget class="QLabel" name="labelGroundingMaxResultsMin">
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderGroundingMaxResults">
+                 <property name="minimum">
+                  <number>0</number>
+                 </property>
+                 <property name="maximum">
+                  <number>50</number>
+                 </property>
+                 <property name="value">
+                  <number>5</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelGroundingMaxResultsMax">
+                 <property name="text">
+                  <string>50</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="labelGoogleMaxTokens">
+               <property name="text">
+                <string>google.max_tokens</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="hLayoutGoogleMaxTokens">
+               <item>
+                <widget class="QLabel" name="labelGoogleMaxTokensMin">
+                 <property name="text">
+                  <string>500</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderGoogleMaxTokens">
+                 <property name="minimum">
+                  <number>500</number>
+                 </property>
+                 <property name="maximum">
+                  <number>200000</number>
+                 </property>
+                 <property name="value">
+                  <number>1500</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelGoogleMaxTokensMax">
+                 <property name="text">
+                  <string>200000</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupGPTR">
+            <property name="title">
+             <string>GPTR (GPT Researcher)</string>
+            </property>
+            <layout class="QFormLayout" name="formGPTR">
+             <item row="0" column="0">
+              <widget class="QLabel" name="labelFastTokenLimit">
+               <property name="text">
+                <string>FAST_TOKEN_LIMIT</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <layout class="QHBoxLayout" name="hLayoutFastTokenLimit">
+               <item>
+                <widget class="QLabel" name="labelFastTokenLimitMin">
+                 <property name="text">
+                  <string>300</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderFastTokenLimit">
+                 <property name="minimum">
+                  <number>300</number>
+                 </property>
+                 <property name="maximum">
+                  <number>100000</number>
+                 </property>
+                 <property name="value">
+                  <number>300</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelFastTokenLimitMax">
+                 <property name="text">
+                  <string>100000</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="labelSmartTokenLimit">
+               <property name="text">
+                <string>SMART_TOKEN_LIMIT</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="hLayoutSmartTokenLimit">
+               <item>
+                <widget class="QLabel" name="labelSmartTokenLimitMin">
+                 <property name="text">
+                  <string>300</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderSmartTokenLimit">
+                 <property name="minimum">
+                  <number>300</number>
+                 </property>
+                 <property name="maximum">
+                  <number>200000</number>
+                 </property>
+                 <property name="value">
+                  <number>600</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelSmartTokenLimitMax">
+                 <property name="text">
+                  <string>200000</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="labelStrategicTokenLimit">
+               <property name="text">
+                <string>STRATEGIC_TOKEN_LIMIT</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <layout class="QHBoxLayout" name="hLayoutStrategicTokenLimit">
+               <item>
+                <widget class="QLabel" name="labelStrategicTokenLimitMin">
+                 <property name="text">
+                  <string>300</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderStrategicTokenLimit">
+                 <property name="minimum">
+                  <number>300</number>
+                 </property>
+                 <property name="maximum">
+                  <number>100000</number>
+                 </property>
+                 <property name="value">
+                  <number>400</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelStrategicTokenLimitMax">
+                 <property name="text">
+                  <string>100000</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="labelBrowseChunkMaxLength">
+               <property name="text">
+                <string>BROWSE_CHUNK_MAX_LENGTH</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <layout class="QHBoxLayout" name="hLayoutBrowseChunkMaxLength">
+               <item>
+                <widget class="QLabel" name="labelBrowseChunkMaxLengthMin">
+                 <property name="text">
+                  <string>100</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderBrowseChunkMaxLength">
+                 <property name="minimum">
+                  <number>100</number>
+                 </property>
+                 <property name="maximum">
+                  <number>30000</number>
+                 </property>
+                 <property name="value">
+                  <number>892</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelBrowseChunkMaxLengthMax">
+                 <property name="text">
+                  <string>30000</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="labelSummaryTokenLimit">
+               <property name="text">
+                <string>SUMMARY_TOKEN_LIMIT</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <layout class="QHBoxLayout" name="hLayoutSummaryTokenLimit">
+               <item>
+                <widget class="QLabel" name="labelSummaryTokenLimitMin">
+                 <property name="text">
+                  <string>70</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderSummaryTokenLimit">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimum">
+                  <number>70</number>
+                 </property>
+                 <property name="maximum">
+                  <number>2000</number>
+                 </property>
+                 <property name="value">
+                  <number>700</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelSummaryTokenLimitMax">
+                 <property name="text">
+                  <string>2000</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="labelTemperature">
+               <property name="text">
+                <string>TEMPERATURE</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <layout class="QHBoxLayout" name="hLayoutTemperature">
+               <item>
+                <widget class="QLabel" name="labelTemperatureMin">
+                 <property name="text">
+                  <string>0.0</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderTemperature">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimum">
+                  <number>0</number>
+                 </property>
+                 <property name="maximum">
+                  <number>100</number>
+                 </property>
+                 <property name="value">
+                  <number>40</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelTemperatureMax">
+                 <property name="text">
+                  <string>1.0</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="labelMaxSearchResultsPerQuery">
+               <property name="text">
+                <string>MAX_SEARCH_RESULTS</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <layout class="QHBoxLayout" name="hLayoutMaxSearchResultsPerQuery">
+               <item>
+                <widget class="QLabel" name="labelMaxSearchResultsPerQueryMin">
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderMaxSearchResultsPerQuery">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>9</number>
+                 </property>
+                 <property name="value">
+                  <number>5</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelMaxSearchResultsPerQueryMax">
+                 <property name="text">
+                  <string>9</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLabel" name="labelTotalWords">
+               <property name="text">
+                <string>TOTAL_WORDS</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <layout class="QHBoxLayout" name="hLayoutTotalWords">
+               <item>
+                <widget class="QLabel" name="labelTotalWordsMin">
+                 <property name="text">
+                  <string>100</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderTotalWords">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimum">
+                  <number>100</number>
+                 </property>
+                 <property name="maximum">
+                  <number>50000</number>
+                 </property>
+                 <property name="value">
+                  <number>100</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelTotalWordsMax">
+                 <property name="text">
+                  <string>50000</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="8" column="0">
+              <widget class="QLabel" name="labelMaxIterations">
+               <property name="text">
+                <string>MAX_ITERATIONS</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="1">
+              <layout class="QHBoxLayout" name="hLayoutMaxIterations">
+               <item>
+                <widget class="QLabel" name="labelMaxIterationsMin">
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderMaxIterations">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>9</number>
+                 </property>
+                 <property name="value">
+                  <number>1</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelMaxIterationsMax">
+                 <property name="text">
+                  <string>9</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="9" column="0">
+              <widget class="QLabel" name="labelMaxSubtopics">
+               <property name="text">
+                <string>MAX_SUBTOPICS</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="1">
+              <layout class="QHBoxLayout" name="hLayoutMaxSubtopics">
+               <item>
+                <widget class="QLabel" name="labelMaxSubtopicsMin">
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderMaxSubtopics">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>10</number>
+                 </property>
+                 <property name="value">
+                  <number>1</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelMaxSubtopicsMax">
+                 <property name="text">
+                  <string>10</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupDR">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>DR (Deep Research)</string>
+            </property>
+            <layout class="QFormLayout" name="formDR">
+             <item row="0" column="0">
+              <widget class="QLabel" name="labelDeepResearchBreadth">
+               <property name="text">
+                <string>DEEP_RESEARCH_BREADTH</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <layout class="QHBoxLayout" name="hLayoutDeepResearchBreadth">
+               <item>
+                <widget class="QLabel" name="labelDeepResearchBreadthMin">
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderDeepResearchBreadth">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>9</number>
+                 </property>
+                 <property name="value">
+                  <number>1</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelDeepResearchBreadthMax">
+                 <property name="text">
+                  <string>9</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="labelDeepResearchDepth">
+               <property name="text">
+                <string>DEEP_RESEARCH_DEPTH</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="hLayoutDeepResearchDepth">
+               <item>
+                <widget class="QLabel" name="labelDeepResearchDepthMin">
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderDeepResearchDepth">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>9</number>
+                 </property>
+                 <property name="value">
+                  <number>1</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelDeepResearchDepthMax">
+                 <property name="text">
+                  <string>9</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupMA">
+            <property name="title">
+             <string>MA (Multi-Agent Task)</string>
+            </property>
+            <layout class="QFormLayout" name="formMA">
+             <item row="0" column="0">
+              <widget class="QLabel" name="labelMaxSections">
+               <property name="text">
+                <string>max_sections</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <layout class="QHBoxLayout" name="hLayoutMaxSections">
+               <item>
+                <widget class="QLabel" name="labelMaxSectionsMin">
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="sliderMaxSections">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>9</number>
+                 </property>
+                 <property name="value">
+                  <number>1</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="labelMaxSectionsMax">
+                 <property name="text">
+                  <string>9</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="rightLayout">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="leftMargin">
+         <number>2</number>
+        </property>
+        <property name="topMargin">
+         <number>2</number>
+        </property>
+        <property name="rightMargin">
+         <number>2</number>
+        </property>
+        <property name="bottomMargin">
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="groupProvidersHeader">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Report Types: Provider and Model</string>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupProvidersFPF">
+          <property name="toolTip">
+           <string>When unchecked, set iterations.fpf = 0 in config.yaml</string>
+          </property>
+          <property name="title">
+           <string>FPF (FilePromptForge)</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+          <layout class="QFormLayout" name="formProvidersFPF">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelFPFProvider">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboFPFProvider">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelFPFModel">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboFPFModel">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupProvidersGPTR">
+          <property name="toolTip">
+           <string>When unchecked, set iterations.gptr = 0 in config.yaml</string>
+          </property>
+          <property name="title">
+           <string>GPTR (GPT Researcher)</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+          <layout class="QFormLayout" name="formProvidersGPTR">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelGPTRProvider">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboGPTRProvider">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelGPTRModel">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboGPTRModel">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupProvidersDR">
+          <property name="toolTip">
+           <string>When unchecked, set iterations.dr = 0 in config.yaml</string>
+          </property>
+          <property name="title">
+           <string>DR (Deep Research)</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+          <layout class="QFormLayout" name="formProvidersDR">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelDRProvider">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboDRProvider">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelDRModel">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboDRModel">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupProvidersMA">
+          <property name="toolTip">
+           <string>When unchecked, set iterations.ma = 0 in config.yaml</string>
+          </property>
+          <property name="title">
+           <string>MA (Multi-Agent Task)</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+          <layout class="QFormLayout" name="formProvidersMA">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelMAProvider">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboMAProvider">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelMAModel">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboMAModel">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupAdditionalModel">
+          <property name="title">
+           <string>Additional Model</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QFormLayout" name="formAdditionalModel">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelAdditionalType">
+             <property name="text">
+              <string>Report Type</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboAdditionalType">
+             <item>
+              <property name="text">
+               <string>All Selected Types</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>FPF (FilePromptForge)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>GPTR (GPT Researcher)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>DR (Deep Research)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>MA (Multi-Agent Task)</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelAdditionalProvider">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboAdditionalProvider">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelAdditionalModel">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="comboAdditionalModel">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupAdditionalModel2">
+          <property name="title">
+           <string>Additional Model 2</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QFormLayout" name="formAdditionalModel2">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelAdditionalType2">
+             <property name="text">
+              <string>Report Type</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboAdditionalType2">
+             <item>
+              <property name="text">
+               <string>FPF (FilePromptForge)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>GPTR (GPT Researcher)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>DR (Deep Research)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>MA (Multi-Agent Task)</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelAdditionalProvider2">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboAdditionalProvider2">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelAdditionalModel2">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="comboAdditionalModel2">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupAdditionalModel3">
+          <property name="title">
+           <string>Additional Model 3</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QFormLayout" name="formAdditionalModel3">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelAdditionalType3">
+             <property name="text">
+              <string>Report Type</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboAdditionalType3">
+             <item>
+              <property name="text">
+               <string>FPF (FilePromptForge)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>GPTR (GPT Researcher)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>DR (Deep Research)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>MA (Multi-Agent Task)</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelAdditionalProvider3">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboAdditionalProvider3">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelAdditionalModel3">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="comboAdditionalModel3">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupAdditionalModel4">
+          <property name="title">
+           <string>Additional Model 4</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QFormLayout" name="formAdditionalModel4">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelAdditionalType4">
+             <property name="text">
+              <string>Report Type</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboAdditionalType4">
+             <item>
+              <property name="text">
+               <string>FPF (FilePromptForge)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>GPTR (GPT Researcher)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>DR (Deep Research)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>MA (Multi-Agent Task)</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelAdditionalProvider4">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboAdditionalProvider4">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelAdditionalModel4">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="comboAdditionalModel4">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="pathsLayout">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <property name="leftMargin">
+         <number>2</number>
+        </property>
+        <property name="topMargin">
+         <number>2</number>
+        </property>
+        <property name="rightMargin">
+         <number>2</number>
+        </property>
+        <property name="bottomMargin">
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="groupPaths">
+          <property name="title">
+           <string>Paths</string>
+          </property>
+          <layout class="QFormLayout" name="formPaths">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelInputFolder">
+             <property name="text">
+              <string>input_folder</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <layout class="QHBoxLayout" name="hLayoutInputFolder">
+             <item>
+              <widget class="QLineEdit" name="lineInputFolder">
+               <property name="toolTip">
+                <string>Full path to input folder</string>
+               </property>
+               <property name="text">
+                <string>c:/dev/truthknocker/process_markdown/test/mdinputs</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnBrowseInputFolder">
+               <property name="toolTip">
+                <string>Open OS folder picker</string>
+               </property>
+               <property name="text">
+                <string>Browse…</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnOpenInputFolder">
+               <property name="toolTip">
+                <string>Open this folder in the OS</string>
+               </property>
+               <property name="text">
+                <string>Open</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelOutputFolder">
+             <property name="text">
+              <string>output_folder</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <layout class="QHBoxLayout" name="hLayoutOutputFolder">
+             <item>
+              <widget class="QLineEdit" name="lineOutputFolder">
+               <property name="toolTip">
+                <string>Full path to output folder</string>
+               </property>
+               <property name="text">
+                <string>c:/dev/truthknocker/process_markdown/test/mdoutputs</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnBrowseOutputFolder">
+               <property name="toolTip">
+                <string>Open OS folder picker</string>
+               </property>
+               <property name="text">
+                <string>Browse…</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnOpenOutputFolder">
+               <property name="toolTip">
+                <string>Open this folder in the OS</string>
+               </property>
+               <property name="text">
+                <string>Open</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelInstructionsFile">
+             <property name="text">
+              <string>instructions_file</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <layout class="QHBoxLayout" name="hLayoutInstructionsFile">
+             <item>
+              <widget class="QLineEdit" name="lineInstructionsFile">
+               <property name="toolTip">
+                <string>Full path to instructions file</string>
+               </property>
+               <property name="text">
+                <string>c:/dev/truthknocker/process_markdown/test/instructions.txt</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnBrowseInstructionsFile">
+               <property name="toolTip">
+                <string>Open OS file picker</string>
+               </property>
+               <property name="text">
+                <string>Browse…</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnOpenInstructionsFolder">
+               <property name="toolTip">
+                <string>Open containing folder in the OS</string>
+               </property>
+               <property name="text">
+                <string>Open</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="3" column="1">
+            <layout class="QHBoxLayout" name="hLayoutOutputFolder_2">
+             <item>
+              <widget class="QLineEdit" name="lineOutputFolder_2">
+               <property name="toolTip">
+                <string>Full path to output folder</string>
+               </property>
+               <property name="text">
+                <string>c:/dev/truthknocker/process_markdown/test/mdoutputs</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnBrowseOutputFolder_2">
+               <property name="toolTip">
+                <string>Open OS folder picker</string>
+               </property>
+               <property name="text">
+                <string>Browse…</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnOpenOutputFolder_2">
+               <property name="toolTip">
+                <string>Open this folder in the OS</string>
+               </property>
+               <property name="text">
+                <string>Open</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>MA Guidlines File</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupEvaluation">
+          <property name="title">
+           <string>Graded Evaluation</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+          <layout class="QFormLayout" name="formEvaluation">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelEvaluationIterations">
+             <property name="text">
+              <string>Iterations</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <layout class="QHBoxLayout" name="hLayoutEvaluationIterations">
+             <item>
+              <widget class="QLabel" name="labelEvaluationIterationsMin">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="sliderEvaluationIterations">
+               <property name="minimum">
+                <number>0</number>
+               </property>
+               <property name="maximum">
+                <number>9</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelEvaluationIterationsMax">
+               <property name="text">
+                <string>9</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelEvaluationProvider">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboEvaluationProvider">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelEvaluationModel">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="comboEvaluationModel">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupEvaluation2">
+          <property name="title">
+           <string>Pairwise Evaluation</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+          <layout class="QFormLayout" name="formEvaluation2">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelEvaluationIterations2">
+             <property name="text">
+              <string>Iterations</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <layout class="QHBoxLayout" name="hLayoutEvaluationIterations2">
+             <item>
+              <widget class="QLabel" name="labelEvaluationIterationsMin2">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="sliderEvaluationIterations2">
+               <property name="minimum">
+                <number>0</number>
+               </property>
+               <property name="maximum">
+                <number>9</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelEvaluationIterationsMax2">
+               <property name="text">
+                <string>9</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelEvaluationProvider2">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboEvaluationProvider2">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelEvaluationModel2">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="comboEvaluationModel2">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupAdditionalEvaluation">
+          <property name="title">
+           <string>Additional Evaluation</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QFormLayout" name="formAdditionalEvaluation">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelAdditionalEvalType">
+             <property name="text">
+              <string>Evaluation Type</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboAdditionalEvalType">
+             <item>
+              <property name="text">
+               <string>Both Evaluations</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Graded Evaluation</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pairwise Evaluation</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelAdditionalEvalProvider">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboAdditionalEvalProvider">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelAdditionalEvalModel">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="comboAdditionalEvalModel">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupAdditionalEvaluation2">
+          <property name="title">
+           <string>Additional Evaluation</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QFormLayout" name="formAdditionalEvaluation2">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelAdditionalEvalType2">
+             <property name="text">
+              <string>Evaluation Type</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboAdditionalEvalType2">
+             <item>
+              <property name="text">
+               <string>Graded Evaluation</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pairwise Evaluation</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelAdditionalEvalProvider2">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboAdditionalEvalProvider2">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelAdditionalEvalModel2">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="comboAdditionalEvalModel2">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupAdditionalEvaluation3">
+          <property name="title">
+           <string>Additional Evaluation</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QFormLayout" name="formAdditionalEvaluation3">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelAdditionalEvalType3">
+             <property name="text">
+              <string>Evaluation Type</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboAdditionalEvalType3">
+             <item>
+              <property name="text">
+               <string>Graded Evaluation</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pairwise Evaluation</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelAdditionalEvalProvider3">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboAdditionalEvalProvider3">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelAdditionalEvalModel3">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="comboAdditionalEvalModel3">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupAdditionalEvaluation4">
+          <property name="title">
+           <string>Additional Evaluation</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QFormLayout" name="formAdditionalEvaluation4">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelAdditionalEvalType4">
+             <property name="text">
+              <string>Evaluation Type</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboAdditionalEvalType4">
+             <item>
+              <property name="text">
+               <string>Graded Evaluation</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pairwise Evaluation</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelAdditionalEvalProvider4">
+             <property name="text">
+              <string>Provider</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboAdditionalEvalProvider4">
+             <item>
+              <property name="text">
+               <string>google</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openai</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelAdditionalEvalModel4">
+             <property name="text">
+              <string>Model</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="comboAdditionalEvalModel4">
+             <item>
+              <property name="text">
+               <string>Select model...</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gemini-2.5-flash</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4.1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-4o</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gpt-5-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>o4-mini</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>openrouter: custom</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Combine and Revise</string>
+        </property>
+        <widget class="QCheckBox" name="checkBox">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>131</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Use Evaluated File</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupProvidersMA_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>56</y>
+           <width>226</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>When unchecked, set iterations.ma = 0 in config.yaml</string>
+         </property>
+         <property name="title">
+          <string>Post-Eval Revise Model</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <layout class="QFormLayout" name="formProvidersMA_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelMAProvider_2">
+            <property name="text">
+             <string>Provider</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboMAProvider_2">
+            <item>
+             <property name="text">
+              <string>google</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>openai</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>openrouter</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelMAModel_2">
+            <property name="text">
+             <string>Model</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboMAModel_2">
+            <item>
+             <property name="text">
+              <string>Select model...</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gemini-2.5-flash</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gpt-4.1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gpt-4o</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gpt-5-mini</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>o4-mini</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>openrouter: custom</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="labelEvaluationIterations_2">
+            <property name="text">
+             <string>Iterations</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <layout class="QHBoxLayout" name="hLayoutEvaluationIterations_2">
+            <item>
+             <widget class="QLabel" name="labelEvaluationIterationsMin_2">
+              <property name="text">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="sliderEvaluationIterations_2">
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>9</number>
+              </property>
+              <property name="value">
+               <number>1</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelEvaluationIterationsMax_2">
+              <property name="text">
+               <string>9</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QGroupBox" name="groupProvidersMA_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>340</y>
+           <width>226</width>
+           <height>161</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>When unchecked, set iterations.ma = 0 in config.yaml</string>
+         </property>
+         <property name="title">
+          <string>Secondary revision</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <layout class="QFormLayout" name="formProvidersMA_3">
+          <item row="2" column="0">
+           <widget class="QLabel" name="labelMAProvider_3">
+            <property name="text">
+             <string>Provider</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QComboBox" name="comboMAProvider_3">
+            <item>
+             <property name="text">
+              <string>google</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>openai</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>openrouter</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="labelMAModel_3">
+            <property name="text">
+             <string>Model</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QComboBox" name="comboMAModel_3">
+            <item>
+             <property name="text">
+              <string>Select model...</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gemini-2.5-flash</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gpt-4.1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gpt-4o</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gpt-5-mini</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>o4-mini</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>openrouter: custom</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboMAProvider_5">
+            <item>
+             <property name="text">
+              <string>BOTH Revised and ELO winners</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Only Revised</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelMAProvider_5">
+            <property name="text">
+             <string>Inputs</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <layout class="QHBoxLayout" name="hLayoutEvaluationIterations_5">
+            <item>
+             <widget class="QLabel" name="labelEvaluationIterationsMin_5">
+              <property name="text">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="sliderEvaluationIterations_5">
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>9</number>
+              </property>
+              <property name="value">
+               <number>1</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelEvaluationIterationsMax_5">
+              <property name="text">
+               <string>9</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelMAProvider_6">
+            <property name="text">
+             <string>Iterations</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QGroupBox" name="groupProvidersMA_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>226</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>When unchecked, set iterations.ma = 0 in config.yaml</string>
+         </property>
+         <property name="title">
+          <string>Additional  Post-Eval Revise Model</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <layout class="QFormLayout" name="formProvidersMA_5">
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelMAProvider_7">
+            <property name="text">
+             <string>Provider</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboMAProvider_6">
+            <item>
+             <property name="text">
+              <string>google</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>openai</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>openrouter</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelMAModel_5">
+            <property name="text">
+             <string>Model</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboMAModel_5">
+            <item>
+             <property name="text">
+              <string>Select model...</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gemini-2.5-flash</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gpt-4.1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gpt-4o</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gpt-5-mini</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>o4-mini</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>openrouter: custom</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="labelEvaluationIterations_5">
+            <property name="text">
+             <string>Iterations</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <layout class="QHBoxLayout" name="hLayoutEvaluationIterations_6">
+            <item>
+             <widget class="QLabel" name="labelEvaluationIterationsMin_6">
+              <property name="text">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="sliderEvaluationIterations_6">
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>9</number>
+              </property>
+              <property name="value">
+               <number>1</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelEvaluationIterationsMax_6">
+              <property name="text">
+               <string>9</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QGroupBox" name="groupProvidersMA_6">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>490</y>
+           <width>226</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>When unchecked, set iterations.ma = 0 in config.yaml</string>
+         </property>
+         <property name="title">
+          <string>additional Secondary evaluation mmodel</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <layout class="QFormLayout" name="formProvidersMA_6">
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelMAProvider_8">
+            <property name="text">
+             <string>Provider</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboMAProvider_7">
+            <item>
+             <property name="text">
+              <string>google</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>openai</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>openrouter</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelMAModel_6">
+            <property name="text">
+             <string>Model</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboMAModel_6">
+            <item>
+             <property name="text">
+              <string>Select model...</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gemini-2.5-flash</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gpt-4.1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gpt-4o</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>gpt-5-mini</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>o4-mini</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>openrouter: custom</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>290</y>
+           <width>256</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;multipe revised reports, be they from multple iterations or multiple providers, will trigger another cycle of evaluation and revision.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>590</y>
+           <width>256</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;iterations in this collem does not refer to eval interations, only revised report outputs&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBottomMetrics">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>10</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>15555555</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Runtime Metrics</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Input Files</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelMetric3">
+         <property name="text">
+          <string>Total Reports</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>0/0</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelMetric2">
+         <property name="text">
+          <string>Total Evaluations</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="valueMetric2">
+         <property name="text">
+          <string>0/0</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelMetric4">
+         <property name="text">
+          <string>Quality Multipler</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="valueMetric3">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelMetric1">
+         <property name="text">
+          <string>Total Cost Multipler</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="valueMetric1">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="progressBar_2">
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="value">
+          <number>24</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="bottomButtonsLayout">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="leftMargin">
+       <number>6</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>6</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Download and Install</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnOpenPMConfig">
+        <property name="text">
+         <string>Open PM Config</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAction8">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Open .env</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Install .env</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAction1">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Open GPT-R Config</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAction2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Open FPF Config</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAction3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Open MA Config</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAction4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Load Prest</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAction5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Save Preset</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Write to Configs</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAction6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Run One File</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAction7">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Run</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1224</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
